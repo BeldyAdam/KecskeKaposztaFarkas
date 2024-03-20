@@ -1,0 +1,40 @@
+img {
+    width: 100px;
+}
+main, header, aside, footer, article{
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+      "h   h   h"
+      "asb ar asj"
+      "f   f  f";
+    grid-gap: 10px;
+  }
+  
+  header {
+    grid-area: h;
+  }
+  #bal {
+    grid-area: asb;
+  }
+  #jobb {
+    grid-area: asj;
+  }
+  article {
+    grid-area: ar;
+    margin: auto;
+  }
+  footer {
+    grid-area: f;
+    text-align: center;
+  }
+
+.kiemel{
+    border: 2px solid red;
+    cursor: grab;
+}
